@@ -14,152 +14,194 @@
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
 }
-.yk{
-    position:fixed;
-    /* background: rgba(255,255,255,0.18); */
-    color: rgba(255,255,255,0.18);;
-    text-align: center;
-}
 
 body{
-    background: linear-gradient(135deg, #11998e, #38ef7d);
-    color:#ffffff;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color:#e5e7eb;
+    padding-top:80px;
 }
 
-/* HERO SECTION */
+/* HEADER */
+.yk{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:16px;
+    background: rgba(2,6,23,0.9);
+    backdrop-filter: blur(12px);
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+    cursor:pointer;
+    color:#22d3ee;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+/* HERO */
 .hero{
     text-align:center;
-    padding:80px 20px 60px;
+    padding:60px 20px 40px;
 }
 
 .hero img{
     width:190px;
     height:190px;
     border-radius:50%;
-    border:6px solid rgba(255,255,255,0.9);
-    box-shadow:0 0 40px rgba(255,255,255,0.6);
+    border:4px solid #22d3ee;
+    box-shadow:0 0 35px rgba(34,211,238,0.6);
     margin-bottom:25px;
 }
 
 .hero h1{
-    font-size:44px;
-    font-weight:700;
-    letter-spacing:1px;
+    font-size:42px;
 }
 
-.hero h3{
-    font-weight:400;
-    margin-top:12px;
-    opacity:0.95;
+.highlight{
+    color:#22d3ee;
 }
 
-.hero p{
-    margin-top:8px;
+.typing{
+    margin-top:14px;
+    font-size:22px;
+    min-height:30px;
+    color:#67e8f9;
+}
+
+.tagline{
+    margin-top:10px;
+    opacity:0.85;
+}
+
+/* ENTER BUTTON */
+.enter-btn{
+    margin-top:35px;
+    padding:16px 44px;
     font-size:16px;
-    opacity:0.9;
+    font-weight:600;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    background:linear-gradient(135deg,#22d3ee,#38bdf8);
+    color:#020617;
+    box-shadow:0 20px 40px rgba(34,211,238,0.35);
+    transition:0.35s;
+}
+
+.enter-btn:hover{
+    transform:translateY(-4px) scale(1.05);
 }
 
 /* CONTAINER */
 .container{
     max-width:1150px;
     margin:auto;
-    padding:30px 20px 10px;
+    padding:20px;
 }
 
-/* GLASS CARD */
+/* CARD */
 .card{
-    background: rgba(255,255,255,0.18);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(16px);
     border-radius:22px;
-    padding:35px;
+    padding:38px;
     margin-bottom:35px;
-    box-shadow:0 25px 50px rgba(0,0,0,0.25);
+    box-shadow:0 25px 55px rgba(0,0,0,0.45);
+    border:1px solid rgba(255,255,255,0.08);
     transition:0.4s;
 }
 
 .card:hover{
-    transform: translateY(-6px);
+    transform:translateY(-6px);
 }
 
-/* HEADINGS */
 .card h2{
-    color:#0f5132;
+    color:#22d3ee;
+    border-left:5px solid #22d3ee;
+    padding-left:14px;
     margin-bottom:18px;
-    font-size:26px;
-    border-left:6px solid #0f5132;
-    padding-left:15px;
 }
 
-.card p, 
-.card li{
-    font-size:16px;
+.card p, .card li{
     line-height:1.9;
-    color:#0b3d2e;
+    color:#d1d5db;
 }
 
 /* SKILLS */
-.skills{
-    margin-top:10px;
-}
-
 .skills span{
     display:inline-block;
     margin:8px;
-    padding:10px 20px;
-    background:#0f5132;
-    color:#ffffff;
+    padding:10px 22px;
+    background:rgba(34,211,238,0.15);
+    color:#67e8f9;
     border-radius:30px;
-    font-weight:600;
     font-size:14px;
+    font-weight:600;
 }
 
-/* LINKS / BUTTONS */
-.links{
-    margin-top:10px;
+/* PROJECTS */
+.project{
+    margin-bottom:22px;
+    padding:22px;
+    background:rgba(255,255,255,0.05);
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.08);
 }
 
+.project h3{
+    color:#67e8f9;
+}
+
+.project p{
+    margin:8px 0;
+}
+
+/* LINKS */
 .links a{
     display:inline-block;
-    margin:10px 10px 0 0;
-    padding:14px 32px;
+    margin:12px 12px 0 0;
+    padding:14px 34px;
+    background:linear-gradient(135deg,#22d3ee,#38bdf8);
+    color:#020617;
     border-radius:35px;
-    background:#0f5132;
-    color:#ffffff;
     text-decoration:none;
     font-weight:600;
-    letter-spacing:0.5px;
     transition:0.3s;
 }
 
 .links a:hover{
-    background:#ffffff;
-    color:#0f5132;
-    transform:scale(1.06);
+    transform:scale(1.08);
+}
+
+/* HIDDEN */
+.hidden{
+    display:none;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
-    padding:22px;
-    background: rgba(0,0,0,0.25);
-    margin-top:40px;
-    font-size:14px;
-    color:#e9fdf6;
+    padding:30px;
+    background:rgba(2,6,23,0.85);
+    margin-top:50px;
+    color:#9ca3af;
 }
 </style>
 </head>
 
 <body>
-    <h1 class="yk">YUVAN KARTHICK S</h1>
+
+<!-- HEADER -->
+<div class="yk" onclick="showAll()">YUVAN KARTHICK S</div>
 
 <!-- HERO -->
 <section class="hero">
     <img src="ykphoto.jpeg" alt="Yuvan Karthick">
-    <h1>Yuvan Karthick S</h1>
-    <h3>Aspiring Full Stack Developer | Java | Leadership Skill </h3>
-    <p>Technical Team Lead – Techno Tribe | ECA Student</p>
-    <p>RMK Engineering College, Chennai</p>
+    <h1>Hi, I'm <span class="highlight">Yuvan Karthick S</span></h1>
+    <h3 class="typing"><span id="typing-text"></span></h3>
+    <p class="tagline">Java • Full Stack • Leadership</p>
+    <button class="enter-btn" onclick="showAll()">🚀 Explore My Portfolio</button>
 </section>
 
 <div class="container">
@@ -168,47 +210,50 @@ footer{
 <div class="card">
 <h2>About Me</h2>
 <p>
-I am <strong>Yuvan Karthick S</strong>, an aspiring <strong>Full Stack Developer</strong> with a strong passion for 
-<strong>Java programming and Data Structures & Algorithms (DSA)</strong>.
+I am <strong>Yuvan Karthick S</strong>, an aspiring <strong>Full Stack Developer</strong> with a strong passion for
+<strong>Java and Data Structures & Algorithms</strong>.
 </p>
 <p>
-I am currently pursuing <strong>Electronics and Communication Engineering (ECA)</strong> at 
-<strong>RMK Engineering College, Chennai</strong>. I hail from 
-<strong>Thiruvenkatanathapuram</strong>, a beautiful village in Tirunelveli district.
+Currently pursuing <strong>Electronics and Communication Engineering (ECA)</strong> at
+<strong>RMK Engineering College, Chennai</strong>.
 </p>
 <p>
-I completed my schooling at <strong>Keins Matric Higher Secondary School, Vallioor</strong>, securing 
-<strong>90% marks in both 10th and 12th standard</strong>.
+Completed schooling at <strong>Keins Matric Higher Secondary School, Vallioor</strong>
+with <strong>90% in 10th and 12th</strong>.
 </p>
 </div>
 
-<!-- INTERNSHIP -->
+<!-- FULL PROFILE -->
+<div id="fullProfile" class="hidden">
+
 <div class="card">
-<h2>Internship Experience</h2>
-<p>
-During my 1st semester holidays, I am undergoing an internship at 
-<strong>Lintcloud</strong>, a product and service-based company located in Vallioor, Tirunelveli.
-This experience helps me gain practical exposure to real-world technology and professional environments.
-</p>
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>Responsive modern portfolio built using HTML, CSS & JavaScript.</p>
+<div class="links">
+<a href="https://github.com/ykarthicks12117" target="_blank">View on GitHub</a>
+</div>
 </div>
 
-<!-- LEADERSHIP -->
-<div class="card">
-<h2>Leadership & Activities</h2>
-<p><strong>Technical Team Lead – Techno Tribe</strong></p>
-<ul>
-<li>• Leading a college-level technical team</li>
-<li>• Organizing peer learning and technical discussions</li>
-<li>• Encouraging students to explore programming and development</li>
-<li>• Building teamwork, leadership, and innovation</li>
-</ul>
+<div class="project">
+<h3>Web Development Practice Projects</h3>
+<p>Collection of frontend practice projects and experiments.</p>
+<div class="links">
+<a href="https://github.com/ykarthicks12117" target="_blank">Explore Repositories</a>
+</div>
 </div>
 
-<!-- SKILLS -->
+<div class="links">
+<a href="https://github.com/ykarthicks12117" target="_blank">🔗 Visit My GitHub</a>
+</div>
+</div>
+
 <div class="card">
 <h2>Technical Skills</h2>
 <div class="skills">
-<span>Learning Java with DSA</span>
+<span>Java & DSA</span>
 <span>C++</span>
 <span>HTML</span>
 <span>CSS</span>
@@ -217,40 +262,58 @@ This experience helps me gain practical exposure to real-world technology and pr
 </div>
 </div>
 
-<!-- CERTIFICATES -->
 <div class="card">
 <h2>Certifications</h2>
 <ul>
 <li>✔ 7 Certifications from Infosys Springboard</li>
-<li>✔ Focused on Programming & Technology Skills</li>
 </ul>
 <div class="links">
-<a href="certificate.html">View Certificates</a>
+<a href="certificate.html" target="_blank">View Certificates</a>
 </div>
 </div>
 
-<!-- GOALS -->
-<div class="card">
-<h2>Career Goal</h2>
-<p>
-My goal is to become a skilled <strong>Full Stack Developer</strong> with strong expertise in 
-<strong>Java and DSA</strong>, build impactful software solutions, and grow as a developer and leader in the tech industry.
-</p>
-</div>
-
-<!-- CONTACT -->
 <div class="card">
 <h2>Connect With Me</h2>
 <div class="links">
-<a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn Profile</a>
+<a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+<a href="mailto:ykarthicks12117@gmail.com">Email</a>
 </div>
 </div>
 
+</div>
 </div>
 
 <footer>
 © 2026 | Designed & Developed by Yuvan Karthick S
 </footer>
+
+<script>
+function showAll(){
+    document.getElementById("fullProfile").style.display="block";
+    document.querySelector(".enter-btn").style.display="none";
+}
+
+/* Typing Effect */
+const roles=[
+"Aspiring Full Stack Developer",
+"Java & DSA Learner",
+"Technical Team Lead – Techno Tribe"
+];
+let i=0,j=0,del=false;
+function typeEffect(){
+    const el=document.getElementById("typing-text");
+    const t=roles[i];
+    if(!del){
+        el.textContent=t.substring(0,j++);
+        if(j>t.length){del=true;setTimeout(typeEffect,1200);return;}
+    }else{
+        el.textContent=t.substring(0,j--);
+        if(j===0){del=false;i=(i+1)%roles.length;}
+    }
+    setTimeout(typeEffect,del?60:100);
+}
+typeEffect();
+</script>
 
 </body>
 </html>
